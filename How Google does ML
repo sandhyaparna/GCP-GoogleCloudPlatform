@@ -3,7 +3,7 @@
 * Infrastructure for ML - How do you process batch data and stream data the same way? - On GCP, the key services are all serverless and they're all managed infrastructure.
 * Data is key to any ML model. Invest in getting more data
 * A ML model is a mathematical function. Models generalize from the examples provided to it
-* 
+* The key to making a machine learning model generalized is data, and lots and lots of it. Having labeled the data is a precondition for successful machine learning.
 
 
 
