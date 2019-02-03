@@ -4,7 +4,8 @@
 * Data is key to any ML model. Invest in getting more data
 * A ML model is a mathematical function. Models generalize from the examples provided to it
 * The key to making a machine learning model generalized is data, and lots and lots of it. Having labeled the data is a precondition for successful machine learning.
-
+* Prediction is nothing but inference
+* 
 
 
 
