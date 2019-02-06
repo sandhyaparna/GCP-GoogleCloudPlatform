@@ -4,7 +4,7 @@ BigQuery ML - https://console.cloud.google.com/bigquery?project=eighth-edge-2308
 APIs
 * Cloud Vision - https://cloud.google.com/vision/
   * Labels photos in the image - Tells you what is this a picture of
-  * 
+  * Web Detection - 
 * Cloud Video Intelligence - https://cloud.google.com/video-intelligence/
 * Cloud Speech-to-Text - https://cloud.google.com/speech-to-text/
 * Cloude Translate - https://cloud.google.com/translate/
