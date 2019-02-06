@@ -25,8 +25,8 @@ APIs <br/>
   Lets you understand text <br/>
   * Extract Entities
   * Detect Sentiment - Positive or Negative
-  * Analyze Syntax - Linguistics like Parts of Speech
-  * Classify Content
+  * Analyze Syntax - Linguistics like Parts of Speech, Dependency parse tree - tells how diff words in a sentence relate to each other, which words depend on other words; Parse label - Tells us the role of each word in a sentence; Lemma - canonical form of the word; Morphology 
+  * Classify Content - What is the sentence taking about? 
 
 
 
