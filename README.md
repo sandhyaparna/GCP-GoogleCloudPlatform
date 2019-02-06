@@ -16,11 +16,16 @@ APIs <br/>
   * Shot Cahnge Detection - Time stamp everytime Camera changes shots
   * Explicit Content Detection - Identify inappropriate scenes in your video 
 * Cloud Speech-to-Text - https://cloud.google.com/speech-to-text/
+  If a audio file is passed, text transcription is returned <br/>
+  * Speech timestamps - Return the start and end time for every word in your audio transcription
+  * Profanity filtering 
 * Cloude Translate - https://cloud.google.com/translate/
+  * Translate text to diff languages
 * Cloud Natural Language - https://cloud.google.com/natural-language/
+  Lets you understand text <br/>
   * Extract Entities
-  * Detect Sentiment
-  * Analyze Syntax
+  * Detect Sentiment - Positive or Negative
+  * Analyze Syntax - Linguistics like Parts of Speech
   * Classify Content
 
 
