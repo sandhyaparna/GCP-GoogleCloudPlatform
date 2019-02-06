@@ -12,6 +12,9 @@ APIs <br/>
   * Crop hints - Help you crop your photos to focus on a particular subject
   * Explicit content detection - This is really useful for any website or app that has user generated content
 * Cloud Video Intelligence - https://cloud.google.com/video-intelligence/
+  * Label detection - Tells you what's in this video - What is your video about & What's happening in every scene of your video
+  * Shot Cahnge Detection - Time stamp everytime Camera changes shots
+  * Explicit Content Detection - Identify inappropriate scenes in your video 
 * Cloud Speech-to-Text - https://cloud.google.com/speech-to-text/
 * Cloude Translate - https://cloud.google.com/translate/
 * Cloud Natural Language - https://cloud.google.com/natural-language/
