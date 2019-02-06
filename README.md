@@ -5,7 +5,8 @@ APIs
 * Cloud Vision - https://cloud.google.com/vision/
 * Cloud Video Intelligence - https://cloud.google.com/video-intelligence/
 * Cloud Speech-to-Text - https://cloud.google.com/speech-to-text/
-* 
+* Cloude Translate - https://cloud.google.com/translate/
+
 
 
 
