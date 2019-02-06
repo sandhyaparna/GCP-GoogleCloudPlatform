@@ -9,3 +9,8 @@ Activate datalab
 * In Google cloud platform, open cloud shell - datalab create vminstancename --zone us-central1-a
 * To open instance that has already been created - datalab connect vminstancename
 
+APIs
+* Cloud Vision API - https://cloud.google.com/vision/
+* 
+
+
