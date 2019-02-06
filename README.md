@@ -4,8 +4,13 @@ BigQuery ML - https://console.cloud.google.com/bigquery?project=eighth-edge-2308
  <br/>
 APIs <br/>
 * Cloud Vision - https://cloud.google.com/vision/
-  * Labels photos in the image - Tells you what is this a picture of
-  * Web Detection - 
+  * Label Detection - Labels photos in the image - Tells you what is this a picture of
+  * Web Detection - Search for similar images across the web and extracts content from the pages where those images are found to return additional details on your image
+  * OCR or Optical Character Recognition -  Extracts texture images. It will tell you where that text was found and it can even tell you what language that text is in
+  * Logo detection - Identify company logos and an image 
+  * Landmark detection - Tells if an image contains a common landmark. It will also provide the latitude, longitude coordinates of that landmark
+  * Crop hints - Help you crop your photos to focus on a particular subject
+  * Explicit content detection - This is really useful for any website or app that has user generated content
 * Cloud Video Intelligence - https://cloud.google.com/video-intelligence/
 * Cloud Speech-to-Text - https://cloud.google.com/speech-to-text/
 * Cloude Translate - https://cloud.google.com/translate/
