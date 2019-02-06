@@ -5,3 +5,7 @@ Analyzing data using Datalab (Google Cloud DataLab) and BigQuery https://www.cou
   Qwiklabs https://www.qwiklabs.com/focuses/604?catalog_rank=%7B%22rank%22%3A1%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=1954172
    <br/>
 
+Activate datalab
+* In Google cloud platform, open cloud shell - datalab create vminstancename --zone us-central1-a
+* 
+
