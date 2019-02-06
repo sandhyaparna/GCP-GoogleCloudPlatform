@@ -1,8 +1,8 @@
-Google Cloud Platform - https://console.cloud.google.com/home/dashboard?project=eighth-edge-230802
-Google Cloud Platform - Github - https://github.com/GoogleCloudPlatform
-BigQuery ML - https://console.cloud.google.com/bigquery?project=eighth-edge-230802
-
-APIs
+Google Cloud Platform - https://console.cloud.google.com/home/dashboard?project=eighth-edge-230802 <br/>
+Google Cloud Platform - Github - https://github.com/GoogleCloudPlatform <br/>
+BigQuery ML - https://console.cloud.google.com/bigquery?project=eighth-edge-230802 <br/>
+ <br/>
+APIs <br/>
 * Cloud Vision - https://cloud.google.com/vision/
   * Labels photos in the image - Tells you what is this a picture of
   * Web Detection - 
