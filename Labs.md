@@ -1,3 +1,5 @@
+GCP GitHub Repo https://github.com/sandhyaparna/training-data-analyst <br/>
+
 Rent-a-VM to Process Earthquake Data https://www.coursera.org/learn/google-machine-learning/lecture/Qonu0/lab-debrief  <br/>
   Qwiklabs https://www.qwiklabs.com/focuses/1846?catalog_rank=%7B%22rank%22%3A1%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=1953907  <br/>
    <br/>
@@ -15,5 +17,7 @@ git clone https://github.com/GoogleCloudPlatform/training-data-analyst <br/>
 rm -rf training-data-analyst/.git <br/>
 
 Invoking ML APIs https://www.coursera.org/learn/google-machine-learning/lecture/PVHTl/lab-solution <br/>
-Github repo https://github.com/sandhyaparna/training-data-analyst <br/>
+Github repo https://github.com/sandhyaparna/training-data-analyst/blob/master/CPB100/lab4c/mlapis.ipynb <br/>
+
+
 
