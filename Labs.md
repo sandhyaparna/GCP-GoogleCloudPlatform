@@ -9,10 +9,10 @@ Activate datalab
 * In Google cloud platform, open cloud shell - datalab create vminstancename --zone us-central1-a
 * To open instance that has already been created - datalab connect vminstancename
 
-In the datalab clone a github repository:
-%bash
-git clone https://github.com/GoogleCloudPlatform/training-data-analyst
-rm -rf training-data-analyst/.git
+In the datalab clone a github repository: <br/>
+%bash <br/>
+git clone https://github.com/GoogleCloudPlatform/training-data-analyst <br/>
+rm -rf training-data-analyst/.git <br/>
 
 Invoking ML APIs https://www.coursera.org/learn/google-machine-learning/lecture/PVHTl/lab-solution <br/>
 Github repo https://github.com/sandhyaparna/training-data-analyst <br/>
