@@ -8,8 +8,8 @@ Analyzing data using Datalab (Google Cloud DataLab) and BigQuery https://www.cou
    <br/>
 
 Activate datalab
-1) In Google cloud platform, open cloud shell - datalab create vminstancename --zone us-central1-a
-2) To open instance that has already been created - datalab connect vminstancename
+* In Google cloud platform, open cloud shell - datalab create vminstancename --zone us-central1-a
+* To open instance that has already been created - datalab connect vminstancename
 
 In the datalab clone a github repository: <br/>
 %bash <br/>
