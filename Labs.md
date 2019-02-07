@@ -14,3 +14,6 @@ In the datalab clone a github repository:
 git clone https://github.com/GoogleCloudPlatform/training-data-analyst
 rm -rf training-data-analyst/.git
 
+Invoking ML APIs https://www.coursera.org/learn/google-machine-learning/lecture/PVHTl/lab-solution <br/>
+Github repo https://github.com/sandhyaparna/training-data-analyst <br/>
+
