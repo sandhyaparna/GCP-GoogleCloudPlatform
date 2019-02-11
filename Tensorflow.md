@@ -1,3 +1,5 @@
+Tensorflow Website https://www.tensorflow.org/
+
 TensorFlow is an open source, high performance, library for numerical computation.  <br/>
 Tensordlow is a lazy evaluation model - write a DAG and then you run the DAG in the context of a session to get results
 But in tf.eager the evaluation is immediate and it's not lazy but it is typically not used in production programs and used only for development. <br/>
