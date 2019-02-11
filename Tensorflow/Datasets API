@@ -1,0 +1,34 @@
+Data set API is used to handle large datasets, designed to be used with estimators <br/>
+
+
+def decode_line(row):
+    cols = tf.decode_csv(row, record_defaults = [[0],['house'],[0]])
+    features = {{'sq_footage':cols[0], 'type':cols[1]}
+    labels = cols[2]
+    return features, label
+
+dataset = dataset.shuffle(1000) \
+                 .repeat(15)    \
+                 .batch(128)
+                 
+def input_fn():
+  features, label = dataset.make_one_shot_iterator().get_next()
+  return features, label
+  
+model.train(input_fn)  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
