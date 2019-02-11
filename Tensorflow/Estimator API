@@ -17,7 +17,9 @@ Please be aware that restarting from the latest checkpoint, is the default behav
   * Steps equals 1,000 will run 1,000 additional training steps starting from the last checkpoint. One step here corresponds to one batch of input data. 
   * Max steps equals 1,000 on the other hand restarts from the latest check points reads the step count reached in the previous run and continues until the step count reaches max steps. This can potentially do nothing if the checkpoint was already there.
 
-
+#### Out of memory datasets are 
+Data set API is used to handle large datasets, designed to be used with estimators. <br/>
+Large data sets tend to be sharded into multiple files, which can be loaded progressively. <br/>
 
 
 
