@@ -13,7 +13,11 @@ Specify a folder directory <br/>
 Please be aware that restarting from the latest checkpoint, is the default behavior of estimators. If you want to restart from scratch, delete this folder. <br/>
 model = tf.estimator.LinearRegressor(featcols,'./model_trained') <br/>
 model.train(train_input_fun, steps=100) <br/>
-
+* By default, training will run until your training data is exhausted or exhausted n times if you specifies you want n epochs in your input function. 
+* You can also override this with an explicit number of steps when calling the train function. 
+* There are two variants for the step setting. 
+  * Steps equals 1,000 will run 1,000 additional training steps starting from the last checkpoint. One step here corresponds to one batch of input data. 
+  * Max steps equals 1,000 on the other hand restarts from the latest check points reads the step count reached in the previous run and continues until the step count reaches max steps. This can potentially do nothing if the checkpoint was already there.
 
 
 
