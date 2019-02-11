@@ -21,8 +21,12 @@ Please be aware that restarting from the latest checkpoint, is the default behav
 Data set API is used to handle large datasets, designed to be used with estimators. <br/>
 Large data sets tend to be sharded into multiple files, which can be loaded progressively. <br/>
 
+#### Distributed training
 
+#### Tensorboard
+To evaluate metrics
 
+#### 
 
 
 
