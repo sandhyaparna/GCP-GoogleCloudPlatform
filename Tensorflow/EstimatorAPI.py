@@ -23,7 +23,7 @@ model.train(train_input_fun(df), max_steps=100)  #100 steps might be nothing if 
 # Then evaluate on Validation dataset
 # Later predict on Test data
 
-### Distributed Training  
+### Distributed Training  - shuffling is more imp
 run_config = tf.estimator.RunConfig(model_dir=output_dir, save_summary_steps=100, save_checkpoints_steps=2000)
 estimator = tf.estimator.LinearRegressor(feature_columns=featcolls, config=run_config)
 # Train
