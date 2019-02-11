@@ -10,8 +10,9 @@ Production:serving predictions from a trained model
 #### Checkpoints
 Allows you to continue training, resume on failure, and predict from a train model <br/>
 Specify a folder directory <br/>
-
-
+Please be aware that restarting from the latest checkpoint, is the default behavior of estimators. If you want to restart from scratch, delete this folder. <br/>
+model = tf.estimator.LinearRegressor(featcols,'./model_trained') <br/>
+model.train(train_input_fun, steps=100) <br/>
 
 
 
