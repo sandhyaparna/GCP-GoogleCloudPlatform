@@ -1,20 +1,34 @@
-Data set API is used to handle large datasets, designed to be used with estimators <br/>
+Data set API is used to handle large datasets, designed to be used with estimators. <br/>
+Large data sets tend to be sharded into multiple files, which can be loaded progressively. <br/>
 
-
+# text line dataset to load data from a csv file
 def decode_line(row):
     cols = tf.decode_csv(row, record_defaults = [[0],['house'],[0]])
     features = {{'sq_footage':cols[0], 'type':cols[1]}
     labels = cols[2]
     return features, label
 
+# Dataset 
+# Normal dataset
+dataset = tf.data.TextLineDataset("train_1.csv") \
+                 .map(decode_line)
+# Large datsets
+dataset = tf.data.Dataset.list_files("train.csv-*")  \
+                 .flat_map(tf.data.TextLineDataset) \
+                 .map(decode_line)
+
+# Shuffles data, repeats into 15 epochs and seperate into batches
 dataset = dataset.shuffle(1000) \
                  .repeat(15)    \
                  .batch(128)
-                 
+
+# Data is loaded progresively - They return TensorFlow nodes, and these nodes return data when they get executed
+# Receives data from input nodes, features & labels. These nodes iterate on the data set and return one batch of data every time that they get executed in the training loop.
 def input_fn():
   features, label = dataset.make_one_shot_iterator().get_next()
   return features, label
-  
+
+# Launches training loop 
 model.train(input_fn)  
 
 
