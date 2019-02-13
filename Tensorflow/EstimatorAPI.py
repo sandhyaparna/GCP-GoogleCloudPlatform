@@ -7,9 +7,19 @@ featcols = [
       tf.feature_column_numeric_column("sq_footage"),
       tf.feature_column.categorical_column_with_vocabulary_list("type",["house","apt"]), #type variable has 2 unique values-house, apt
       tf.feature_column_numeric_column("nbeds")  ]
-# featcols[0] in this example implies u want to bucketize sq_footage column into the specified buckets
+# featcols[0] in this example implies u want to bucketize sq_footage column into the specified buckets 
+# sq_footage is fed into the model as both numeric and category or u can also replace
 featcols.append(
       fc.buketized_column(featcols[0],[500,1000,2000]))
+# Embeddings in tensorflow 
+# For latitude & longitude
+latbuckets = np.linespace(38,42,nbuckets).tolist() #Define intervals into which we want lat to be discretized into. nbuckets for equally spaced intervals
+lonbuckets = np.linespace(-76,-72, nbuckets).tolist() #Define intervals into which we want lon to be discretized into
+b_lat = fc.bucketized_column(house_lat, latbuckets)
+b_lon = fc.bucketized_column(house_lon, lonbuckets)
+loc = fc.crossed_Column([b_lat,b_lon], nbuckets*nbuckets) #Creating feature crosses from lat & lon
+eloc = fc.embedding_column(loc,nbuckets//4) # Create nbuckets by 4 embeddings
+#
 model = tf.estimator.LinearRegressor(featcols,'./model_trained') #'./model_trained' is used to create checkpoints in that folder
 
 def train_input_fn(df):
