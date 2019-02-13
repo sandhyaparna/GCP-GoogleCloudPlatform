@@ -24,4 +24,4 @@ https://www.qwiklabs.com/focuses/610?locale=en&parent=catalog
 
 Feature Creation https://github.com/sandhyaparna/training-data-analyst/blob/master/courses/machine_learning/feateng/feateng.ipynb <br/>
 
-
+Tf transform https://github.com/sandhyaparna/training-data-analyst/blob/master/courses/machine_learning/feateng/tftransform.ipynb 
