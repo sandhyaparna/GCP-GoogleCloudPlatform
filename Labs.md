@@ -22,6 +22,6 @@ Github repo https://github.com/sandhyaparna/training-data-analyst/blob/master/CP
 Using Cloud DataPrep - join data, create new features; save data to BigQuery-Perform Aggregation; Use DataLab to visualize data
 https://www.qwiklabs.com/focuses/610?locale=en&parent=catalog
 
-Feature Creation https://github.com/sandhyaparna/training-data-analyst/blob/master/courses/machine_learning/feateng/feateng.ipynb
+Feature Creation https://github.com/sandhyaparna/training-data-analyst/blob/master/courses/machine_learning/feateng/feateng.ipynb <br/>
 
 
