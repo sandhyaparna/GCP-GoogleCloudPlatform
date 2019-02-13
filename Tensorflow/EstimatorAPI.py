@@ -52,7 +52,7 @@ def decode_line(row):
     cols = tf.decode_csv(row, record_defaults = [[0],['house'],[0]])
     features = {{'sq_footage':cols[0], 'type':cols[1]}
     labels = cols[2]
-    return features, label
+  return features, label
 # Dataset 
 # Normal dataset
 dataset = tf.data.TextLineDataset("train_1.csv") \
@@ -73,5 +73,6 @@ def input_fn():
 # Launches training loop 
 model.train(input_fn)  
 
+                      
             
 
