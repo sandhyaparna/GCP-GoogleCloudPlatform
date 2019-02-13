@@ -6,8 +6,10 @@
 featcols = [
       tf.feature_column_numeric_column("sq_footage"),
       tf.feature_column.categorical_column_with_vocabulary_list("type",["house","apt"]), #type variable has 2 unique values-house, apt
-      tf.feature_column_numeric_column("nbeds")
-]
+      tf.feature_column_numeric_column("nbeds")  ]
+# featcols[0] in this example implies u want to bucketize sq_footage column into the specified buckets
+featcols.append(
+      fc.buketized_column(featcols[0],[500,1000,2000]))
 model = tf.estimator.LinearRegressor(featcols,'./model_trained') #'./model_trained' is used to create checkpoints in that folder
 
 def train_input_fn(df):
