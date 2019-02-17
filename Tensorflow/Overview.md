@@ -33,7 +33,7 @@ tf.metrics - a way to compute the root mean square error and data as it comes in
 https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/46180.pdf <br/>
 * Express the hyperparameters tuning in need of tuning as a command-line argument - parser.add_argument
 * Ensure differnt iterations of different training trails dont clobber each other - Naming Convention - Use some word as a suffix 
-* Supply those hyperparameters to the training job
+* Supply those hyperparameters to the training job - Create a ML file and then supply the path to the ML file via command line to G cloud ML engine command
 
 
 
