@@ -23,6 +23,11 @@ tf.metrics - a way to compute the root mean square error and data as it comes in
 * Hyper-parameter tuning of ML-engine
 * Production:serving predictions from a trained model
 
+#### How to change optimizer, learning rate, batch size
+* Batch size is controlled in input function
+* Learning rate, regularization are parameters of optimizer algorithm and pass it to the estimator 
+* Steps = (Number of epochs * Number of Samples) / Batch Size
+* If you decrease learning rate, you'll have to train for more epochs.
 
 
 
