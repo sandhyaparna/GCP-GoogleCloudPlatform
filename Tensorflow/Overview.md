@@ -30,7 +30,10 @@ tf.metrics - a way to compute the root mean square error and data as it comes in
 * If you decrease learning rate, you'll have to train for more epochs.
 
 #### Hyper parameter tuning - Google Vizier - Cloud ML Engine
-NN Training loop does meta-training across all the hyper parameters
+https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/46180.pdf <br/>
+* Express the hyperparameters tuning in need of tuning as a command-line argument - parser.add_argument
+* Ensure differnt iterations of different training trails dont clobber each other - Naming Convention - Use some word as a suffix 
+* Supply those hyperparameters to the training job
 
 
 
