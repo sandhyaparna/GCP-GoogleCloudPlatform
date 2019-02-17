@@ -26,7 +26,7 @@ tf.metrics - a way to compute the root mean square error and data as it comes in
 #### How to change optimizer, learning rate, batch size
 * Batch size is controlled in input function
 * Learning rate, regularization are parameters of optimizer algorithm and pass it to the estimator 
-* Steps = (Number of epochs * Number of Samples) / Batch Size
+* Steps = (Number of epochs * Number of Samples) / Batch Size. Tensorflow doesn't know epoch, so steps should be used
 * If you decrease learning rate, you'll have to train for more epochs.
 
 
