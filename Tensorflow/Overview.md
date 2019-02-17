@@ -29,6 +29,8 @@ tf.metrics - a way to compute the root mean square error and data as it comes in
 * Steps = (Number of epochs * Number of Samples) / Batch Size. Tensorflow doesn't know epoch, so steps should be used
 * If you decrease learning rate, you'll have to train for more epochs.
 
+#### Hyper parameter tuning - Google Vizier - Cloud ML Engine
+NN Training loop does meta-training across all the hyper parameters
 
 
 
