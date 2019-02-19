@@ -6,7 +6,7 @@
 * The key to making a machine learning model generalized is data, and lots and lots of it. Having labeled the data is a precondition for successful machine learning.
 * Prediction is nothing but inference
 * BigQuery - SQL code
-
+* Scaling out - As your data size increases, batching and distribution become extremely important. You will need to take your data and split it into batches, and then you need to train, but then you need to also distribute your training over many machines. Parameter servers that form a shared memory that's updated during each epoch are needed. 
 
 
 
