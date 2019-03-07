@@ -9,7 +9,9 @@ model = keras.sequential([keras.layers.Dense(units=1, input_shape=[1])])
 # Optimizer - First NN starts with a guess and then optimizer is used to improve upon it (sgd - stochastic gradient descent)
 model.compile(optimizer='sgd', loss='mean_squared_error')
 
-
+# xs - Input data
+# ys - Target var
+model.fit(xs, ys, epochs=500)
 
 
 
