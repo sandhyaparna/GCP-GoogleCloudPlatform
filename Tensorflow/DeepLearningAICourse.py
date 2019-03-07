@@ -11,6 +11,7 @@ model.compile(optimizer='sgd', loss='mean_squared_error')
 
 # xs - Input data
 # ys - Target var
+# epochs - Number of training loops 
 model.fit(xs, ys, epochs=500)
 
 
