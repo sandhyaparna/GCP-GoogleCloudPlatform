@@ -5,8 +5,9 @@
 # Sequential - Successive layers are defined in Sequence
 model = keras.sequential([keras.layers.Dense(units=1, input_shape=[1])])
 
-# Loss functions - Measure the outcome
-# Optimizer - First NN starts with a guess and then optimizer is used to improve upon it (sgd - stochastic gradient descent)
+# Loss functions - Measure how good the current guess is
+# Optimizer - First NN starts with a guess and then optimizer is used to improve upon it. It generates a new and improved guess
+# (sgd - stochastic gradient descent)
 model.compile(optimizer='sgd', loss='mean_squared_error')
 
 # xs - Input data
