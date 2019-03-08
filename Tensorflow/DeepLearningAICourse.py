@@ -1,3 +1,5 @@
+# https://github.com/lmoroney/dlaicourse
+
 ### Neural Networks
 # keras is a Tensorflow API
 # Dense - layers of connection
