@@ -56,7 +56,6 @@ class myCallback(tf.keras.callbacks.Callback):
     if(logs.get('loss')<0.4):
       print("\nReached 60% accuracy so cancelling training!")
       self.model.stop_training = True
-
 callbacks = myCallback()
 model.fit(training_images, training_labels, epochs=5, callbacks=[callbacks])
 
