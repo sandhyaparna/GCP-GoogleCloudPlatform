@@ -16,6 +16,8 @@ model = tf.keras.models.Sequential([tf.keras.layers.Flatten(input_shape=(28,28))
                                     tf.keras.layers.Dense(128, activation=tf.nn.relu), 
                                     tf.keras.layers.Dense(10, activation=tf.nn.softmax)])
 
+# for image data - Normalize the input values
+
 # Loss functions - Measure how good the current guess is
 # Optimizer - First NN starts with a guess and then optimizer is used to improve upon it. It generates a new and improved guess
 # (sgd - stochastic gradient descent)
