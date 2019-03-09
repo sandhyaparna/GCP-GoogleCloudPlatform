@@ -8,7 +8,8 @@
 model = keras.sequential([keras.layers.Dense(units=1, input_shape=[1])])
 
 # 3 layers
-# first layer corresponds to input - shape to be expected for the data to be in
+# First layer corresponds to input - shape to be expected for the data to be in. 
+# Each image in MNIST data is represented as 28*28 rows and columns 
 # Last layer corresponds to diff Target classes
 # Hidden Layer - 128 neurons - 
 model = tf.keras.models.Sequential([tf.keras.layers.Flatten(input_shape=(28,28)), 
