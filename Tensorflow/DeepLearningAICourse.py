@@ -7,7 +7,8 @@
 * Image DataSet 
   * How to load data that is already present in tf.keras datasets API as training and test images and their labels
   * How to standardize data from images for Neural networks
-  * 
+  * model.predict of a particular observation gives the probability of that obs being classifies as 0,1,2,3 etc (depends on number of target labels)
+  * As number of 
 
 ### Neural Networks
 # keras is a Tensorflow API
@@ -21,7 +22,7 @@ model = keras.sequential([keras.layers.Dense(units=1, input_shape=[1])])
 # Each image in MNIST data is represented as 28*28 array of (rows and columns)
 # Last layer corresponds to diff Target classes
 # Hidden Layer - 128 neurons - 
-model = tf.keras.models.Sequential([tf.keras.layers.Flatten(input_shape=(28,28)), 
+model = tf.keras.models.Sequential([tf.keras.layers.Flatten(input_shape=(28,28)),  #tf.keras.layers.Flatten(),
                                     tf.keras.layers.Dense(128, activation=tf.nn.relu), 
                                     tf.keras.layers.Dense(10, activation=tf.nn.softmax)])
 
