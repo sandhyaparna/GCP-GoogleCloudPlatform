@@ -8,7 +8,7 @@
 model = keras.sequential([keras.layers.Dense(units=1, input_shape=[1])])
 
 # 3 layers
-# First layer corresponds to input - shape to be expected for the data to be in
+# First layer corresponds to input - shape to be expected for the data to be in. Flatten is used to take image to convert it into a simple array
 # Each image in MNIST data is represented as 28*28 array of (rows and columns)
 # Last layer corresponds to diff Target classes
 # Hidden Layer - 128 neurons - 
