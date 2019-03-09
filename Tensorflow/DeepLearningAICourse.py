@@ -51,6 +51,7 @@ model.predict(test_images)
 model.predict([y])
 
 # Stops training based on callbacks
+# callbacks is based on loss
 class myCallback(tf.keras.callbacks.Callback):
   def on_epoch_end(self, epoch, logs={}):
     if(logs.get('loss')<0.4):
@@ -59,8 +60,12 @@ class myCallback(tf.keras.callbacks.Callback):
 callbacks = myCallback()
 model.fit(training_images, training_labels, epochs=5, callbacks=[callbacks])
 
-
-
+# callbacks is based on accuracy
+class myCallback(tf.keras.callbacks.Callback):
+  def on_epoch_end(self, epoch, logs={}):
+    if(logs.get('acc')>0.99):
+      print("\nReached 99% accuracy so cancelling training!")
+      self.model.stop_training = True
 
 
 
