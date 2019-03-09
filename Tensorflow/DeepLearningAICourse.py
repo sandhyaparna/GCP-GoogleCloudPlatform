@@ -8,7 +8,7 @@
   * How to load data that is already present in tf.keras datasets API as training and test images and their labels
   * How to standardize data from images for Neural networks
   * model.predict of a particular observation gives the probability of that obs being classifies as 0,1,2,3 etc (depends on number of target labels)
-  * As number of 
+  * As number of neurons in tf.keras.layers.Dense layer increases - accuracy of model inc along with time to train
 
 ### Neural Networks
 # keras is a Tensorflow API
@@ -22,7 +22,7 @@ model = keras.sequential([keras.layers.Dense(units=1, input_shape=[1])])
 # Each image in MNIST data is represented as 28*28 array of (rows and columns)
 # Last layer corresponds to diff Target classes
 # Hidden Layer - 128 neurons - 
-model = tf.keras.models.Sequential([tf.keras.layers.Flatten(input_shape=(28,28)),  #tf.keras.layers.Flatten(),
+model = tf.keras.models.Sequential([tf.keras.layers.Flatten(input_shape=(28,28)),  #tf.keras.layers.Flatten(), - flattening is imp in images
                                     tf.keras.layers.Dense(128, activation=tf.nn.relu), 
                                     tf.keras.layers.Dense(10, activation=tf.nn.softmax)])
 
@@ -31,12 +31,19 @@ model = tf.keras.models.Sequential([tf.keras.layers.Flatten(input_shape=(28,28))
 # Loss functions - Measure how good the current guess is
 # Optimizer - First NN starts with a guess and then optimizer is used to improve upon it. It generates a new and improved guess
 # (sgd - stochastic gradient descent)
-model.compile(optimizer='sgd', loss='mean_squared_error')
+model.compile(optimizer='sgd', #'adam'
+              loss='mean_squared_error', #'sparse_categorical_crossentropy'
+              metrics=['accuracy']) #
 
 # xs - Input data
 # ys - Target var
 # epochs - Number of training loops 
 model.fit(xs, ys, epochs=500)
+model.fit(training_images, training_labels, epochs=5)
+
+model.evaluate(test_images, test_labels)
+
+model.predict(test_images)
 model.predict([y])
 
 
