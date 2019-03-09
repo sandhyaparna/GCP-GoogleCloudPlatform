@@ -1,4 +1,6 @@
 # https://github.com/lmoroney/dlaicourse
+* gjk
+* wjak
 
 ### Neural Networks
 # keras is a Tensorflow API
