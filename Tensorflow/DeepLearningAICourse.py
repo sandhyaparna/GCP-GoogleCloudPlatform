@@ -9,7 +9,9 @@
   * How to standardize data from images for Neural networks
   * model.predict of a particular observation gives the probability of that obs being classifies as 0,1,2,3 etc (depends on number of target labels)
   * As number of neurons in tf.keras.layers.Dense layer increases - accuracy of model inc along with time to train
-
+  * Number of Neurons in the last layer should always match the number of classes u are classifying for
+  * First layer in your network should be the same shape as your data
+  
 ### Neural Networks
 # keras is a Tensorflow API
 # Dense - layers of connection
