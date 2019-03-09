@@ -11,6 +11,7 @@
   * As number of neurons in tf.keras.layers.Dense layer increases - accuracy of model inc along with time to train
   * Number of Neurons in the last layer should always match the number of classes u are classifying for
   * First layer in your network should be the same shape as your data
+  * callbacks is used to stop training on more epochs if desired value of loss or accuracy is obtained
   
 ### Neural Networks
 # keras is a Tensorflow API
@@ -26,6 +27,7 @@ model = keras.sequential([keras.layers.Dense(units=1, input_shape=[1])])
 # Hidden Layer - 128 neurons - 
 model = tf.keras.models.Sequential([tf.keras.layers.Flatten(input_shape=(28,28)),  #tf.keras.layers.Flatten(), - flattening is imp in images
                                     tf.keras.layers.Dense(128, activation=tf.nn.relu), 
+                                    tf.keras.layers.Dense(128, activation=tf.nn.relu), #more hidden layers
                                     tf.keras.layers.Dense(10, activation=tf.nn.softmax)])
 
 # for image data - Normalize the input values
@@ -48,7 +50,15 @@ model.evaluate(test_images, test_labels)
 model.predict(test_images)
 model.predict([y])
 
+# Stops training based on callbacks
+class myCallback(tf.keras.callbacks.Callback):
+  def on_epoch_end(self, epoch, logs={}):
+    if(logs.get('loss')<0.4):
+      print("\nReached 60% accuracy so cancelling training!")
+      self.model.stop_training = True
 
+callbacks = myCallback()
+model.fit(training_images, training_labels, epochs=5, callbacks=[callbacks])
 
 
 
