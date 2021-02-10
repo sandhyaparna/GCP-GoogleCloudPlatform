@@ -3,6 +3,7 @@ https://www.coursera.org/learn/google-machine-learning/lecture/PVHTl/lab-solutio
 * username to login to GCP (open Google console): student-00-fca7dbd8ea1d@qwiklabs.net
 * Password to login to GCP: zgPL7YpxG5SW2
 * ProjectID: qwiklabs-gcp-00-46c361627150
+
 Github repo https://github.com/sandhyaparna/training-data-analyst/blob/master/CPB100/lab4c/mlapis.ipynb <br/>
 * Vision API to detect text in an image
 * Translate API to translate that text into English
