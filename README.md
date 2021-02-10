@@ -9,7 +9,13 @@ GPipe - Google open source lib for training deep neural networks
   * https://github.com/GoogleCloudPlatform/ml-on-gcp/tree/master/tutorials/explanations
 * https://github.com/GoogleCloudPlatform/ai-platform-samples
   * https://github.com/GoogleCloudPlatform/ai-platform-samples/blob/master/notebooks/samples/optimizer/ai_platform_optimizer_conditional_parameters.ipynb
-  
+
+### Retail use-cases
+* Predict inventory planning
+* Recommendation engines
+* Upsell and cross-channel marketing
+* Market segmentation & targeting
+* Customer ROI and lifetime value
 
 
 
