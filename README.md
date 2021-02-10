@@ -4,6 +4,13 @@ BigQuery ML - https://console.cloud.google.com/bigquery?project=eighth-edge-2308
 <br/>
 GPipe - Google open source lib for training deep neural networks
 
+### Repos
+* https://github.com/GoogleCloudPlatform/ml-on-gcp
+  * https://github.com/GoogleCloudPlatform/ml-on-gcp/tree/master/tutorials/explanations
+* https://github.com/GoogleCloudPlatform/ai-platform-samples
+  * https://github.com/GoogleCloudPlatform/ai-platform-samples/blob/master/notebooks/samples/optimizer/ai_platform_optimizer_conditional_parameters.ipynb
+  
+
 
 
 
