@@ -16,6 +16,8 @@ GPipe - Google open source lib for training deep neural networks
 * Upsell and cross-channel marketing
 * Market segmentation & targeting
 * Customer ROI and lifetime value
+* Dynamic pricing
+* Traffic pstterns & congestion management
 
 
 
