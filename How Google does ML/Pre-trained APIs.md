@@ -1,4 +1,10 @@
 ### APIs
+* Vision API to detect text in an image
+* Translate API to translate that text into English
+* Natural Language API to find the sentiment of some famous quotes
+* Speech API to transcribe an audio file
+
+
 * Cloud Vision - https://cloud.google.com/vision/
   * Label Detection - Labels photos in the image - Tells you what is this a picture of
   * Web Detection - Search for similar images across the web and extracts content from the pages where those images are found to return additional details on your image
