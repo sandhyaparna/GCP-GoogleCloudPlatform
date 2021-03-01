@@ -6,11 +6,12 @@ Repo https://github.com/sandhyaparna/training-data-analyst <br/>
   * Lab Solution https://www.coursera.org/learn/google-machine-learning/lecture/PVHTl/lab-solution
 * ML 1.2 Analyzing data using Datalab (Google Cloud DataLab) and BigQuery: Invoke BigQuery Console, How to use BigQuery within Python Jupyter notebook
   * https://www.coursera.org/learn/google-machine-learning/lecture/Cj3hg/lab-debrief-analyzing-data-using-datalab-and-bigquery   <br/>
-* Improve Data Quality 
+* ML 2.1 Improve Data Quality 
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/launching_into_ml/labs/improve_data_quality.ipynb
   * Solution https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/launching_into_ml/solutions/improve_data_quality.ipynb
-  
-
+* ML 2.2 Exploratory Data Analysis Using Python and BigQuery
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/launching_into_ml/solutions/python.BQ_explore_data.ipynb
+* ML 
 
 Rent-a-VM to Process Earthquake Data https://www.coursera.org/learn/google-machine-learning/lecture/Qonu0/lab-debrief  <br/>
   Qwiklabs https://www.qwiklabs.com/focuses/1846?catalog_rank=%7B%22rank%22%3A1%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=1953907  <br/>
