@@ -15,6 +15,10 @@ Repo https://github.com/sandhyaparna/training-data-analyst <br/>
  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/launching_into_ml/solutions/intro_linear_regression.ipynb 
 * ML 2.4 Introduction to Logistic Regression
  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/launching_into_ml/solutions/intro_logistic_regression.ipynb  
+* ML 2.5 Maintaining Consistency in Training with Repeatable Splitting
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/launching_into_ml/solutions/repeatable_splitting.ipynb
+
+
 
 
 
