@@ -14,14 +14,15 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
 * ML 2.2 Exploratory Data Analysis Using Python and BigQuery
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/launching_into_ml/solutions/python.BQ_explore_data.ipynb
 * ML 2.3 Introduction to Linear Regression
- * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/launching_into_ml/solutions/intro_linear_regression.ipynb 
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/launching_into_ml/solutions/intro_linear_regression.ipynb 
 * ML 2.4 Introduction to Logistic Regression
- * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/launching_into_ml/solutions/intro_logistic_regression.ipynb  
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/launching_into_ml/solutions/intro_logistic_regression.ipynb  
 * ML 2.5 Maintaining Consistency in Training with Repeatable Splitting
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/launching_into_ml/solutions/repeatable_splitting.ipynb
 * ML 2.6 Explore and create ML datasets
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/launching_into_ml/solutions/explore_data.ipynb
 <br/>
+
 * ML 3.1 Introduction to Tensors and Variables
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/tensors-variables.ipynb
 * ML 3.2 Writing Low-Level TensorFlow Code
@@ -47,6 +48,7 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
 * ML 3.12 Keras Functional API
   https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/4_keras_functional_api.ipynb
 <br/>
+
 * ML 4.1 Performing basic feature engineering in BQML
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/feature_engineering/solutions/1_bqml_basic_feat_eng.ipynb
 * ML 4. Performing Basic Feature Engineering in Keras
