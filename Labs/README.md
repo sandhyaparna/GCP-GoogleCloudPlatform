@@ -8,6 +8,7 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
 * ML 1.2 Analyzing data using Datalab (Google Cloud DataLab) and BigQuery: Invoke BigQuery Console, How to use BigQuery within Python Jupyter notebook
   * https://www.coursera.org/learn/google-machine-learning/lecture/Cj3hg/lab-debrief-analyzing-data-using-datalab-and-bigquery   
 <br/>
+
 * ML 2.1 Improve Data Quality 
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/launching_into_ml/solutions/improve_data_quality.ipynb
 * ML 2.2 Exploratory Data Analysis Using Python and BigQuery
