@@ -55,29 +55,32 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/feature_engineering/solutions/3_keras_basic_feat_eng.ipynb
 * ML 4.3 A simple Dataflow pipeline (Python)
   * https://www.coursera.org/learn/feature-engineering/lecture/M6jak/lab-solution-simple-dataflow-pipeline
-* ML 4. 
-  * 
-* ML 4. 
-  * 
-* ML 4. 
-  * 
-* ML 4. 
-  * 
-* ML 4. 
-  * 
-* ML 4. 
-  * 
-* ML 4. 
-  * 
-* ML 4. 
-  * 
-* ML 4. 
-  * 
-* ML 4. 
-  * 
-* ML 4. 
-  * 
-* ML 4. 
+* ML 4.4 MapReduce in Dataflow
+  * https://www.coursera.org/learn/feature-engineering/lecture/zn0dj/lab-solution-mapreduce-in-dataflow
+* ML 4.5 Computing Time-Windowed Features in Cloud Dataprep
+  * https://www.coursera.org/learn/feature-engineering/lecture/G4bH8/lab-solution-computing-time-windowed-features-in-cloud-dataprep
+* ML 4.6 Improve Machine Learning model with Feature Engineering
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/feateng/feateng.ipynb
+* ML 4.7 Performing Advanced Feature Engineering in Keras
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/feature_engineering/solutions/4_keras_adv_feat_eng.ipynb
+* ML 4.8 Exploring tf.transform
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive/11_taxifeateng/tftransform.ipynb
+</br>
+
+* ML 5.1 Reviewing Learning Curves
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/art_and_science_of_ml/solutions/learning_rate.ipynb
+* ML 5.2 Export data from BigQuery to Google Cloud Storage
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/art_and_science_of_ml/solutions/export_data_from_bq_to_gcs.ipynb
+* ML 5.3 Performing Hyperparameter Tuning
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/art_and_science_of_ml/solutions/hyperparameter_tuning.ipynb
+* ML 5.4 Build a DNN using the Keras Functional API
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/art_and_science_of_ml/solutions/neural_network.ipynb
+* ML 5.5 Training Models at Scale with AI Platform
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/art_and_science_of_ml/solutions/training_models_at_scale.ipynb
+* ML 5.6 Introducing the Keras Functional API
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/4_keras_functional_api.ipynb
+ 
+* ML 5. 
   * 
 * ML 4. 
   * 
