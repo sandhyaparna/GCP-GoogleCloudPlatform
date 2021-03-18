@@ -51,10 +51,10 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
 
 * ML 4.1 Performing basic feature engineering in BQML
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/feature_engineering/solutions/1_bqml_basic_feat_eng.ipynb
-* ML 4. Performing Basic Feature Engineering in Keras
+* ML 4.2 Performing Basic Feature Engineering in Keras
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/feature_engineering/solutions/3_keras_basic_feat_eng.ipynb
-* ML 4. A simple Dataflow pipeline (Python)
-  * 
+* ML 4.3 A simple Dataflow pipeline (Python)
+  * https://www.coursera.org/learn/feature-engineering/lecture/M6jak/lab-solution-simple-dataflow-pipeline
 * ML 4. 
   * 
 * ML 4. 
