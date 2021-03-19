@@ -79,18 +79,64 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/art_and_science_of_ml/solutions/training_models_at_scale.ipynb
 * ML 5.6 Introducing the Keras Functional API
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/4_keras_functional_api.ipynb
- 
-* ML 5. 
-  * 
-* ML 4. 
-  * 
-* ML 4. 
-  * 
+</br>
 
+* AML 1.1 Explore the dataset
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive/06_structured/1_explore.ipynb
+* AML 1.2 Create a sample dataset
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/end_to_end_ml/solutions/sample_babyweight.ipynb
+* AML 1.3 Create TensorFlow model
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/end_to_end_ml/solutions/keras_dnn_babyweight.ipynb
+* AML 1.4 Preprocessing using Cloud Dataflow
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/end_to_end_ml/solutions/preproc.ipynb
+* AML 1.5 Training on Cloud AI Platform
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive/06_structured/5_train.ipynb
+* AML 1.6 Deploying and predicting with Cloud AI Platform
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/end_to_end_ml/solutions/deploy_keras_ai_platform_babyweight.ipynb
+</br>
 
+* AML 2.1 Predict Babyweight with TensorFlow using AI Platform
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/blogs/babyweight/train_deploy.ipynb
+* AML 2.2 Serving ML Predictions in batch and real-time
+  * https://www.coursera.org/learn/gcp-production-ml-systems/lecture/ikJI4/lab-solution-serving-ml-predictions-in-batch-and-real-time
 
+* AML 3.1 Linear Models for Image Classification
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive/08_image/mnist_linear.ipynb
+* AML 3.2 DNN Models for Image Classification  &  3.3 DNN with Dropout for Image Classification  &  3.4 CNNs for Image Classification
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/image_classification/solutions/2_mnist_models.ipynb
+* AML 3.5 Implementing image augmentation
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive/08_image/flowers_fromscratch.ipynb
+* AML 3.6 Train a Neural Network Model to Classify Images
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/image_classification/solutions/5_fashion_mnist_class.ipynb
+* AML 3.7 Training with Pre-built ML Models using Cloud Vision API and AutoML
+  * https://www.coursera.org/learn/image-understanding-tensorflow-gcp/lecture/GWMnr/lab-solution-training-with-pre-built-ml-models-using-cloud-vision-api-and-automl
+</br>
 
+* AML 4.1 Using linear models for sequences & 4.2 Using DNNs for sequences & 4.3 Using CNNs for sequences & 4.4 Time series prediction: end-to-end (rnn) & 4.5 Time series prediction: end-to-end (rnn2)
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive/09_sequence/sinewaves.ipynb
+* AML 4.6 Time Series Prediction - Temperature from Weather Data
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive/09_sequence/temperatures.ipynb
+* AML 4.7 Text Classification using TensorFlow/Keras on Cloud AI Platform
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive/09_sequence/text_classification.ipynb
+* AML 4.8 Evaluating a pre-trained embedding from TensorFlow Hub
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive/09_sequence/reusable-embeddings.ipynb
+* AML 4.9 Keras for Text Classification using AI Platform
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/text_classification/solutions/keras_for_text_classification.ipynb
+* AML 4.10 Getting Started with Dialogflow
+  * https://www.coursera.org/learn/sequence-models-tensorflow-gcp/lecture/TIeW2/lab-solution-dialogflow
+</br>
 
+* AML 5. Create a Content-Based Recommendation System
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive/10_recommend/content_based_by_hand.ipynb
+* AML 5. Create a Content-Based Recommendation System Using Neural Networks
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive/10_recommend/content_based_preproc.ipynb
+* AML 5. Collaborative filtering on the MovieLense Dataset
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/recommendation_systems/solutions/als_bqml.ipynb
+* AML 5. Hybrid Recommendations with the MovieLens Dataset
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/recommendation_systems/solutions/als_bqml_hybrid.ipynb
+* AML 5. Recommendation Systems with TensorFlow
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive/10_recommend/cf_softmax_model/target/cfmodel_softmax_model_target.ipynb
+</br>
 
 Rent-a-VM to Process Earthquake Data https://www.coursera.org/learn/google-machine-learning/lecture/Qonu0/lab-debrief  <br/>
   Qwiklabs https://www.qwiklabs.com/focuses/1846?catalog_rank=%7B%22rank%22%3A1%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=1953907  <br/>
