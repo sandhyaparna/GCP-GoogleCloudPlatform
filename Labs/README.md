@@ -38,8 +38,10 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
 * ML 3.4 Loading images Using tf.data.experimental.make_csv_dataset
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/load_images_tf.data.ipynb
 * ML 3.5 Introduction to Feature Columns: 
-  * create a tf.data dataset from a Pandas Dataframe - 
-  * 
+  * tf.feature_column 
+    * create a tf.data dataset from a Pandas Dataframe - 
+    * several types of feature column
+    * tf.feature_column.embedding_column: creates embeddings for the values of a variable
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/feat.cols_tf.data.ipynb
 * ML 3.6 TFRecord and tf.Example
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/tfrecord-tf.example.ipynb
