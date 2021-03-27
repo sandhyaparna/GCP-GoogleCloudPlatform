@@ -28,12 +28,17 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
 * ML 3.2 Writing Low-Level TensorFlow Code
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/write_low_level_code.ipynb
 * ML 3.3 Load CSV, Numpy, and Text data in TensorFlow
-  * Loads csv file stored in a folder directly using tf.data, show_batch is used to look at few rows of data
+  * Using tf.data and tf.feature_column
+    * Loads csv file stored in a folder directly using tf.data, get_dataset function to import data, show_batch is used to look at few rows of data
+    * pack data before passing it into the model
+    * https://github.com/tensorflow/docs/blob/master/site/en/r1/guide/feature_columns.md
+    * tf.feature_column - standardization/normalization can be done using tf.feature_column.numeric_column
+    * create vocab list for categorical variables: tf.feature_column.categorical_column_with_vocabulary_list
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/load_diff_filedata.ipynb
 * ML 3.4 Loading images Using tf.data.experimental.make_csv_dataset
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/load_images_tf.data.ipynb
 * ML 3.5 Introduction to Feature Columns: 
-  * create a tf.data dataset from a Pandas Dataframe
+  * create a tf.data dataset from a Pandas Dataframe - 
   * 
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/feat.cols_tf.data.ipynb
 * ML 3.6 TFRecord and tf.Example
