@@ -45,8 +45,8 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
     * tf.feature_column.embedding_column: creates embeddings for the values of a variable
 * ML 3.6 TFRecord and tf.Example
   * End to end example with image data (writing to tfrecords, serialization on whole data and reading from tfrecods) https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/tfrecord-tf.example.ipynb
-  * tf.Example messages and converted to tfrecord files (tfrecords is a format for storing a sequence of binary records)
-  * tf.Example is a {"string": tf.train.Feature} mapping
+    * tf.train.Example is used to read and data to tfrecord files (tfrecords is a format for storing a sequence of binary records)
+    * tf.data is also used to convert to tfrecords (but tf.train.Example is used mostly to convert to tfrecords)
   * tf.train.example & tf.train.sequenceexample: https://medium.com/mostly-ai/tensorflow-records-what-they-are-and-how-to-use-them-c46bc4bbb564
     * tf.train.Example is used when dataset consist of features, where each feature is a list of values of the same type 
     * Data types for tf.Example.Feature: tf.train.BytesList, tf.train.FloatList, and tf.train.Int64List
