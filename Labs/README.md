@@ -28,23 +28,33 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
 * ML 3.2 Writing Low-Level TensorFlow Code
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/write_low_level_code.ipynb
 * ML 3.3 Load CSV, Numpy, and Text data in TensorFlow
-  * Using tf.data.Dataset and tf.feature_column
+ * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/load_diff_filedata.ipynb
+ * Using tf.data.Dataset and tf.feature_column
     * Loads csv file stored in a folder directly using tf.data, get_dataset function to import data, show_batch is used to look at few rows of data
     * pack data before passing it into the model
     * https://github.com/tensorflow/docs/blob/master/site/en/r1/guide/feature_columns.md
     * tf.feature_column - standardization/normalization can be done using tf.feature_column.numeric_column
     * create vocab list for categorical variables: tf.feature_column.categorical_column_with_vocabulary_list
-  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/load_diff_filedata.ipynb
 * ML 3.4 Loading images Using tf.data.experimental.make_csv_dataset
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/load_images_tf.data.ipynb
 * ML 3.5 Introduction to Feature Columns: 
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/feat.cols_tf.data.ipynb
   * tf.feature_column 
     * create a tf.data dataset from a Pandas Dataframe - 
     * several types of feature column
     * tf.feature_column.embedding_column: creates embeddings for the values of a variable
-  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/feat.cols_tf.data.ipynb
 * ML 3.6 TFRecord and tf.Example
-  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/tfrecord-tf.example.ipynb
+  * End to end example with image data (writing to tfrecords, serialization on whole data and reading from tfrecods) https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/tfrecord-tf.example.ipynb
+  * tf.Example messages and converted to tfrecord files (tfrecords is a format for storing a sequence of binary records)
+  * tf.Example is a {"string": tf.train.Feature} mapping
+  * tf.train.example & tf.train.sequenceexample: https://medium.com/mostly-ai/tensorflow-records-what-they-are-and-how-to-use-them-c46bc4bbb564
+    * tf.train.Example is used when dataset consist of features, where each feature is a list of values of the same type 
+    * Data types for tf.Example.Feature: tf.train.BytesList, tf.train.FloatList, and tf.train.Int64List
+    * Variables/features of data frame are passed through tf.train.feature, which inturn is passed through tf.train.feature(s), and that is passed through tf.train.Example
+    * SerializeToString() is used to serialize output from tf.train.Example
+    * tf.train.Example.FromString is used to deserialize 
+    * There is no requirement to use tf.Example in TFRecord files. tf.Example is just a method of serializing dictionaries to byte-strings. Lines of text, encoded image data, or serialized tensors (using tf.io.serialize_tensor, and tf.io.parse_tensor when loading).
+  * Create tensorflow records from any dataset https://medium.com/nerd-for-tech/how-to-create-tensorflow-tfrecords-out-of-any-dataset-c64c3f98f4f8
 * ML 3.7 TensorFlow Dataset API
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/2_dataset_api.ipynb
 * ML 3.8 Feature Analysis Using TensorFlow Data Validation and Facets
