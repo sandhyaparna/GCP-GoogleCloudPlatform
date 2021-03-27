@@ -28,7 +28,7 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
 * ML 3.2 Writing Low-Level TensorFlow Code
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/write_low_level_code.ipynb
 * ML 3.3 Load CSV, Numpy, and Text data in TensorFlow
-  * Using tf.data and tf.feature_column
+  * Using tf.data.Dataset and tf.feature_column
     * Loads csv file stored in a folder directly using tf.data, get_dataset function to import data, show_batch is used to look at few rows of data
     * pack data before passing it into the model
     * https://github.com/tensorflow/docs/blob/master/site/en/r1/guide/feature_columns.md
