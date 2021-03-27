@@ -57,6 +57,7 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
   * Create tensorflow records from any dataset https://medium.com/nerd-for-tech/how-to-create-tensorflow-tfrecords-out-of-any-dataset-c64c3f98f4f8
 * ML 3.7 TensorFlow Dataset API
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/2_dataset_api.ipynb
+  * read data using tf.data, transform features, batching and shuffle 
 * ML 3.8 Feature Analysis Using TensorFlow Data Validation and Facets
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/adv_tfdv_facets.ipynb
 * ML 3.9 Introducing the Keras Sequential API
@@ -119,6 +120,7 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/blogs/babyweight/train_deploy.ipynb
 * AML 2.2 Serving ML Predictions in batch and real-time
   * https://www.coursera.org/learn/gcp-production-ml-systems/lecture/ikJI4/lab-solution-serving-ml-predictions-in-batch-and-real-time
+</br>
 
 * AML 3.1 Linear Models for Image Classification
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive/08_image/mnist_linear.ipynb
