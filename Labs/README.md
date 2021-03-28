@@ -72,7 +72,7 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
     * tfdv.generate_statistics_from_tfrecord is used to get statistics using TFDV.  The returned value is a DatasetFeatureStatisticsList protocol buffer 
     * tfdv.visualize_statistics(stats) for visualization of the statistics using Facets Overview.
     * for text: TFDV can also compute statistics for semantic domains (e.g., images, text). To enable computation of semantic domain statistics, pass a tfdv.StatsOptions object with enable_semantic_domain_stats set to True to tfdv.generate_statistics_from_tfrecord.Before we train the model,
-* ML 3.9 Introducing the Keras Sequential API --- **TAKES CSV FILE AND GENERATES MODEL AND PREDICTIONS USING TENSORFLOW API APPROACH**
+* ML 3.9 Introducing the Keras Sequential API --- **TAKES CSV FILE AND GENERATES MODEL AND PREDICTIONS USING TENSORFLOW API APPROACH; DEPLOY MODEL TO AI PLATFORM GCP**
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/3_keras_sequential_api.ipynb
     * read data using tf.data, transform features, batching and shuffle, create feature_Columns to send the features through keras sequential model
     * when creating batches of data using tf.data, transform features, batching and shuffle; we can use .fit_generator. In fact, when calling .fit the method inspects the data, and if it's a generator (as our dataset is) it will invoke automatically .fit_generator for training.
