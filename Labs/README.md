@@ -80,10 +80,15 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
     * .fit() for training a model for a fixed number of epochs (iterations on a dataset).
     * .fit_generator() for training a model on data yielded batch-by-batch by a generator
     * .train_on_batch() runs a single gradient update on a single batch of data.
-* ML 3.10 [ML on GCP C3] Basic Introduction to Logistic Regression
+* ML 3.10 Basic Introduction to Logistic Regression **Example**
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/basic_intro_logistic_regression.ipynb
+  * IRIS classification problem
+  * Defined loss and gradient functions, created optimizer
+  * Use trained model to make predictions on test dataset
 * ML 3.11 Advanced Logistic Regression in TensorFlow
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/adv_logistic_reg_TF2.0.ipynb
+  * Fraud detection dta
+  * class weights to deal with imbalanced data
 * ML 3.12 Keras Functional API
   https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/4_keras_functional_api.ipynb
 <br/>
