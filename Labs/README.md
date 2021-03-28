@@ -23,11 +23,11 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/launching_into_ml/solutions/explore_data.ipynb
 <br/>
 
-*** Main
+#### Main 
   * tf.data
   * tf.feature_column
   * tf.train.example/tf.train.sequenceexample and TFRecords
-  * tfdv**
+  * tfdv 
 * ML 3.1 Introduction to Tensors and Variables
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/tensors-variables.ipynb
 * ML 3.2 Writing Low-Level TensorFlow Code
@@ -82,14 +82,14 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
     * .train_on_batch() runs a single gradient update on a single batch of data.
 * ML 3.10 Basic Introduction to Logistic Regression **Example**
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/basic_intro_logistic_regression.ipynb
-  * IRIS classification problem
-  * Defined loss and gradient functions, created optimizer
-  * Use trained model to make predictions on test dataset
-* ML 3.11 Advanced Logistic Regression in TensorFlow
+    * IRIS classification problem
+    * Defined loss and gradient functions, created optimizer
+    * Use trained model to make predictions on test dataset
+* ML 3.11 Advanced Logistic Regression in TensorFlow **Example**
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/adv_logistic_reg_TF2.0.ipynb
-  * Fraud detection dta
-  * class weights to deal with imbalanced data
-* ML 3.12 Keras Functional API
+    * Fraud detection dta
+    * class weights to deal with imbalanced data: model.load_weights() is used before model.fit
+* ML 3.12 Keras Functional API **Example**
   https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/4_keras_functional_api.ipynb
 <br/>
 
