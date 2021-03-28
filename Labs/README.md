@@ -23,6 +23,11 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/launching_into_ml/solutions/explore_data.ipynb
 <br/>
 
+* Main
+  * tf.data
+  * tf.feature_column
+  * tf.train.example/tf.train.sequenceexample and TFRecords
+  * tfdv
 * ML 3.1 Introduction to Tensors and Variables
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/tensors-variables.ipynb
 * ML 3.2 Writing Low-Level TensorFlow Code
@@ -60,8 +65,21 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
   * read data using tf.data, transform features, batching and shuffle 
 * ML 3.8 Feature Analysis Using TensorFlow Data Validation and Facets
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/adv_tfdv_facets.ipynb
-* ML 3.9 Introducing the Keras Sequential API
+    * TensorFlow Data Validation (TFDV) is one tool you can use to analyze your data to find potential problems in your data, such as missing values and data imbalances - that can lead to Fairness disparities
+    * The TFDV tool analyzes training and serving data to compute descriptive statistics, infer a schema, and detect data anomalies. Facets Overview provides a succinct visualization of these statistics for easy browsing. 
+    * Jigsaw kaggle civil comments data - Text data is not used in this example
+    * tf.keras.utils.get_file is used to import tfrecords formatted file of the comments data
+    * tfdv.generate_statistics_from_tfrecord is used to get statistics using TFDV.  The returned value is a DatasetFeatureStatisticsList protocol buffer 
+    * tfdv.visualize_statistics(stats) for visualization of the statistics using Facets Overview.
+    * for text: TFDV can also compute statistics for semantic domains (e.g., images, text). To enable computation of semantic domain statistics, pass a tfdv.StatsOptions object with enable_semantic_domain_stats set to True to tfdv.generate_statistics_from_tfrecord.Before we train the model,
+* ML 3.9 Introducing the Keras Sequential API --- ### TAKES CSV FILE AND GENERATES MODEL AND PREDICTIONS USING TENSORFLOW API APPROACH
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/3_keras_sequential_api.ipynb
+    * read data using tf.data, transform features, batching and shuffle, create feature_Columns to send the features through keras sequential model
+    * when creating batches of data using tf.data, transform features, batching and shuffle; we can use .fit_generator. In fact, when calling .fit the method inspects the data, and if it's a generator (as our dataset is) it will invoke automatically .fit_generator for training.
+    * Training of model: fit() works for small data, fit_generator() is for large datasets, .train_on_batch() method is for more fine-grained control over training and accepts only a single batch of data
+    * .fit() for training a model for a fixed number of epochs (iterations on a dataset).
+    * .fit_generator() for training a model on data yielded batch-by-batch by a generator
+    * .train_on_batch() runs a single gradient update on a single batch of data.
 * ML 3.10 [ML on GCP C3] Basic Introduction to Logistic Regression
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/basic_intro_logistic_regression.ipynb
 * ML 3.11 Advanced Logistic Regression in TensorFlow
