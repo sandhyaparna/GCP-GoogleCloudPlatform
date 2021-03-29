@@ -146,15 +146,13 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
     * Incorporating feature engineering in addition to existing variables: lambda function
     * layer.lambda to apply functions
     * uisng feature engineered variable in keras model
-* ML 4.8 Exploring tf.transform
-  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive/11_taxifeateng/tftransform.ipynb
 * Tensorflow Transform https://www.coursera.org/learn/feature-engineering/lecture/WNo8c/tensorflow-transform
   * tf transform is a hybrid of Apache beam and tensorflow 
   * for example: if we want to scale inputs by the max & min; we first need to traverse through the entire data set for finding min and max of a variable - this is done using Apache Beam in cloud Data flow). We then use min and max to scale the feature - which is done using tendorflow transform
     * Analysis phase(compute min/max/vocab etc) is executed in Beam while creating the training dataset
     * Transform phase(scale/vocab etc) is executed in TensorFlow during prediction
   * tf.transform provides 2 PTransforms
-    * AnalyzeAndTransformDataset: Executed in Beam to create the training dataset. Analyze is done here because min and max should be taken only from training dataset
+    * AnalyzeAndTransformDataset(preprocess): Executed in Beam to create the training dataset. Analyze is done here because min and max should be taken only from training dataset
     * TransformDataset: Executed in Beam to create the evaluation dataset
 * Analyze phase - only on train data https://www.coursera.org/learn/feature-engineering/lecture/x5L7x/analyze-phase
   * We have to tell beam what data to expect
@@ -163,8 +161,17 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
   * At this step we will have raw data schema that has all the columns in the dataset that will be processed by beam on dataflow, raw data schema is used to create a metadata template
   * Next, run the analyze-and-transform Ptransform on the training dataset to get back pre-process training data and the transform function. 
   * beam.io.read to read train data from big query, beam.filter is used to filter out data that u dont want
-  * 
-  * 
+  * raw data from above line and metadata template is passed into AnalyzeAndTransformDataset. outcome is transformed dataset (PCollection data format) and a resuable transform function
+  * transformed dataset is written out as TFRecords but instead of meta data schema above, we use transformed meta data schema needs to used
+* Transform phase: https://www.coursera.org/learn/feature-engineering/lecture/aHO4x/transform-phase
+  * Things that we do in preprocess() will get added to the Tensorflow graph, and be executed in Tensorflow during serving
+  * preprocess function can use only tensorflow functions
+  * on evaluation dataset, transform function that is computed on training data is needed
+  * then it is writted to TFRecords
+* Support Serving https://www.coursera.org/learn/feature-engineering/lecture/zeghG/supporting-serving
+  * build_training_input_fn
+* ML 4.8 Exploring tf.transform
+  * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive/11_taxifeateng/tftransform.ipynb
 </br> 
 
 * ML 5.1 Reviewing Learning Curves
