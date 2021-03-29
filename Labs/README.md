@@ -126,21 +126,28 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
 * ML 4.4 MapReduce in Dataflow
   * https://www.coursera.org/learn/feature-engineering/lecture/zn0dj/lab-solution-mapreduce-in-dataflow
     * source code for the apache beam pipeline https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/data_analysis/lab2/python/is_popular.py
-* Cloud Data prep
+* Cloud Data prep: Exploratory data analysis
   * https://www.coursera.org/learn/feature-engineering/lecture/DKOZG/preprocessing-with-cloud-dataprep
     * Summarize data in BigQuery using SQL. Use Datalab to write sql query and get summarized data set from big query and the visualize the data
     * Cloud Dataprep is a graphical UI to explore data and also compute flows of data transformations
     * Data prep runs a Dataflow job
-    * Data prep ha data wranglers
+    * Data prep has data wranglers
 * ML 4.5 Computing Time-Windowed Features in Cloud Dataprep
-  * https://www.coursera.org/learn/feature-engineering/lecture/G4bH8/lab-solution-computing-time-windowed-features-in-cloud-dataprep
+  * https://www.coursera.org/learn/feature-engineering/lecture/6fV0s/lab-intro-computing-time-windowed-features-in-cloud-data
+* Tensorflow playground: https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.63113&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false 
 * ML 4.6 Improve Machine Learning model with Feature Engineering
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/feateng/feateng.ipynb
-* ML 4.7 Performing Advanced Feature Engineering in Keras
+     * Python function: if else statements is used to add sql query to the existing sql query
+     * BigQuery to csv using dataflow, run beam pipeline on cloud data flow
+* ML 4.7 Performing Advanced Feature Engineering in Keras **Example**
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/feature_engineering/solutions/4_keras_adv_feat_eng.ipynb
+    * Similar to 3.9
+    * Icorporating feature engineering in addition to existing variables: lambda function
+    * layer.lambda to apply functions
+    * uisng feature engineered variable in keras model
 * ML 4.8 Exploring tf.transform
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive/11_taxifeateng/tftransform.ipynb
-</br>
+</br> 
 
 * ML 5.1 Reviewing Learning Curves
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/art_and_science_of_ml/solutions/learning_rate.ipynb
