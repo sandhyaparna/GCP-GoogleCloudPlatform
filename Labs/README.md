@@ -99,10 +99,39 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/feature_engineering/solutions/3_keras_basic_feat_eng.ipynb
     * Scaling of numeric features in tf.feature_column 
     * Append diff types of columns using feature columns
+* Apache Beam and cloud Dataflow
+  * https://www.coursera.org/learn/feature-engineering/lecture/BZ9da/beam-and-dataflow
+    * Cloud Dataflow is a platform to run data processing pipelines. It is serverless. Dataflow can change the amount of computer resources, the number of servers that will run your pipeline, and do that elastically depending on the amount of data that your pipeline needs to process. 
+    * Code for Dataflow is written using Apache Beam. Write code in Apache Beam and deploy the code to cloud Dataflow
+    * Apache Beam name comes from a contraction of batch and stream and it supports both
+    * Batch data sources comes from cloud storage, BigQuery for example
+    * Streaming data source comes from pub/sub
+    * Series of steps in pipeline is called transform. Every transform gets a PCollection as input and outputs the result to another PCollection. PCollection does not store all of its data in memory. So PCollection is like a data structure with pointers to where the data flow cluster stores your data.
+    * Input --> Transform --> sink (last transform in a pipeline)
+    * Running a pipeline requires a runner. It takes pipeline code and executes it
+    * A pipeline is a directed graph of steps. beam.pipeline is used to create a pipeline instance. Once it is created, every transform is implemented as an argument to the apply method of the pipeline. Run method is called on the pipeline instance to execute it
+    * write method should only be used when working with small data sets that can be processed in a single node, because when dealing with large data, there can be multiple servers trying to write results to the file system and results in file lock contention issue
 * ML 4.3 A simple Dataflow pipeline (Python)
   * https://www.coursera.org/learn/feature-engineering/lecture/M6jak/lab-solution-simple-dataflow-pipeline
+    * Source code for the pipeline implementation https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/data_analysis/lab2/python/grep.py
+    * Source code for the pipeline implementation that was modified to run on the Google Cloud Dataflow platform https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/data_analysis/lab2/python/grepc.py
+    * Uses cloud data shell to run the code
+* Data pipelines that scale
+  * https://www.coursera.org/learn/feature-engineering/lecture/Ru1af/data-pipelines-that-scale
+    * beam.map is used for 1:1 relationship. for eg: when we output a len for each word taken as input
+    * beam.flatmap is used for non 1:1 relationships, for eg: when we output all vowels for each word as input
+    * beam.GroupByKey() is used as shuffle based on a combination of features
+    * combine.globally(sum) - for global aggregate operations
+    * combine.perKey(sum): for operations based on variables
 * ML 4.4 MapReduce in Dataflow
   * https://www.coursera.org/learn/feature-engineering/lecture/zn0dj/lab-solution-mapreduce-in-dataflow
+    * source code for the apache beam pipeline https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/data_analysis/lab2/python/is_popular.py
+* Cloud Data prep
+  * https://www.coursera.org/learn/feature-engineering/lecture/DKOZG/preprocessing-with-cloud-dataprep
+    * Summarize data in BigQuery using SQL. Use Datalab to write sql query and get summarized data set from big query and the visualize the data
+    * Cloud Dataprep is a graphical UI to explore data and also compute flows of data transformations
+    * Data prep runs a Dataflow job
+    * Data prep ha data wranglers
 * ML 4.5 Computing Time-Windowed Features in Cloud Dataprep
   * https://www.coursera.org/learn/feature-engineering/lecture/G4bH8/lab-solution-computing-time-windowed-features-in-cloud-dataprep
 * ML 4.6 Improve Machine Learning model with Feature Engineering
