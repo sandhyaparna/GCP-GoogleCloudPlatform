@@ -28,6 +28,7 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
   * tf.feature_column
   * tf.train.example/tf.train.sequenceexample and TFRecords
   * tfdv 
+  * tf
 * ML 3.1 Introduction to Tensors and Variables
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/introduction_to_tensorflow/solutions/tensors-variables.ipynb
 * ML 3.2 Writing Low-Level TensorFlow Code
@@ -142,11 +143,28 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
 * ML 4.7 Performing Advanced Feature Engineering in Keras **Example**
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/feature_engineering/solutions/4_keras_adv_feat_eng.ipynb
     * Similar to 3.9
-    * Icorporating feature engineering in addition to existing variables: lambda function
+    * Incorporating feature engineering in addition to existing variables: lambda function
     * layer.lambda to apply functions
     * uisng feature engineered variable in keras model
 * ML 4.8 Exploring tf.transform
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive/11_taxifeateng/tftransform.ipynb
+* Tensorflow Transform https://www.coursera.org/learn/feature-engineering/lecture/WNo8c/tensorflow-transform
+  * tf transform is a hybrid of Apache beam and tensorflow 
+  * for example: if we want to scale inputs by the max & min; we first need to traverse through the entire data set for finding min and max of a variable - this is done using Apache Beam in cloud Data flow). We then use min and max to scale the feature - which is done using tendorflow transform
+    * Analysis phase(compute min/max/vocab etc) is executed in Beam while creating the training dataset
+    * Transform phase(scale/vocab etc) is executed in TensorFlow during prediction
+  * tf.transform provides 2 PTransforms
+    * AnalyzeAndTransformDataset: Executed in Beam to create the training dataset. Analyze is done here because min and max should be taken only from training dataset
+    * TransformDataset: Executed in Beam to create the evaluation dataset
+* Analyze phase - only on train data https://www.coursera.org/learn/feature-engineering/lecture/x5L7x/analyze-phase
+  * We have to tell beam what data to expect
+  * set up a dictionary called raw data schema and add entries for all the string columns i.e. tensorflow datatype
+  * Update schema for numeric columns
+  * At this step we will have raw data schema that has all the columns in the dataset that will be processed by beam on dataflow, raw data schema is used to create a metadata template
+  * Next, run the analyze-and-transform Ptransform on the training dataset to get back pre-process training data and the transform function. 
+  * beam.io.read to read train data from big query, beam.filter is used to filter out data that u dont want
+  * 
+  * 
 </br> 
 
 * ML 5.1 Reviewing Learning Curves
