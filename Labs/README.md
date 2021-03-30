@@ -192,7 +192,7 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive/06_structured/1_explore.ipynb
 * AML 1.2 Create a sample dataset
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/end_to_end_ml/solutions/sample_babyweight.ipynb
-* AML 1.3 Create TensorFlow model
+* AML 1.3 Create TensorFlow model **Example**
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/end_to_end_ml/solutions/keras_dnn_babyweight.ipynb
 * AML 1.4 Preprocessing using Cloud Dataflow
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/end_to_end_ml/solutions/preproc.ipynb
@@ -224,11 +224,11 @@ ML Glossary https://developers.google.com/machine-learning/glossary  <br/>
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive/09_sequence/sinewaves.ipynb
 * AML 4.6 Time Series Prediction - Temperature from Weather Data
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive/09_sequence/temperatures.ipynb
-* AML 4.7 Text Classification using TensorFlow/Keras on Cloud AI Platform
+* AML 4.7 Text Classification using TensorFlow/Keras on Cloud AI Platform **Example**
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive/09_sequence/text_classification.ipynb
-* AML 4.8 Evaluating a pre-trained embedding from TensorFlow Hub
+* AML 4.8 Evaluating a pre-trained embedding from TensorFlow Hub **Example**
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive/09_sequence/reusable-embeddings.ipynb
-* AML 4.9 Keras for Text Classification using AI Platform
+* AML 4.9 Keras for Text Classification using AI Platform **Example**
   * https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/text_classification/solutions/keras_for_text_classification.ipynb
 * AML 4.10 Getting Started with Dialogflow
   * https://www.coursera.org/learn/sequence-models-tensorflow-gcp/lecture/TIeW2/lab-solution-dialogflow
