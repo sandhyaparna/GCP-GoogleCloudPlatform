@@ -5,7 +5,7 @@
   * Notebook: https://github.com/risenW/tfx-adClickPrediction/blob/master/advert-experiment.ipynb
   * Complete project code: https://github.com/risenW/tfx-adClickPrediction
 * Youtube playlist for TFX: https://www.youtube.com/watch?v=YeuvR6m6ACQ&list=PLQY2H8rRoyvxR15n04JiW0ezF5HQRs_8F 
-
+* Top 10 links for MLOps: https://medium.com/analytics-vidhya/10-amazing-mlops-learning-resources-378804c418be
 
 
 
